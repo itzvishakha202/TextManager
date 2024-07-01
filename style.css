@@ -1,0 +1,45 @@
+
+.Header-name{
+    text-align: center;
+    margin-bottom: 50px;
+    background-color: black;
+    margin: 0 400px;
+    border-radius: 20px 0 20px 0;
+    color: #c8bdb1;
+}
+
+.Header-line{
+    text-align: center;
+}
+
+.Text-container{
+    display: block;
+    height: 200px;
+    width: 70%;
+    border: 4px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    padding: 10px; 
+}
+
+.Result-text{
+    text-align: center;
+    font-size: 30px;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.action-btn{
+    margin-top: 70px;
+    height: 80px;
+    width: 200px;
+    background-color: black;
+    border-color: black;
+    color: #c8bdb1;
+    font-size: 30px;
+    border-radius: 0 20px 20px 0;
+}
