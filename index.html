@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TextManager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="Header-name">TextManager</h1>
+    <h2 class="Header-line">
+      Enter Your Text
+    </h2>
+    <input type="text" class="Text-container" id="input-text">
+
+    <p class="Result-text" id="resultText">
+
+    </p>
+
+    <div class="btn-container">
+        <button type="button" class="action-btn" onclick="ActionResult('UPPERCASE')">
+            UpperCase
+        </button>
+        <button type="button" class="action-btn" onclick="ActionResult('LowerCase')">
+            LowerCase
+        </button>
+        <button type="button" class="action-btn" onclick="ActionResult('CharCount')">
+            CharCount
+        </button>
+        <button type="button" class="action-btn" onclick="ActionResult('WordCount')">
+            WordCount
+        </button>
+    </div>
+
+    <script>
+        function ActionResult(action) {
+            const inputText = document.getElementById("input-text")
+            const resultText = document.getElementById("resultText")
+
+            if (action == 'UPPERCASE') {
+                resultText.innerText = inputText.value.toUpperCase();
+            }
+            else if (action == 'LowerCase') {
+                resultText.innerText = inputText.value.toLowerCase();
+            }
+            else if (action == 'CharCount') {
+                resultText.innerText = (`The Character Count of given text is ${inputText.value.length}`);
+            }
+            else {
+                resultText.innerText = (`The Word Count of given text is ${inputText.value.split(" ").length}`);
+
+            }
+        }
+
+    </script>
+</body>
+
+</html>
